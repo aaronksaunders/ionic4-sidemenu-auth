@@ -9,12 +9,12 @@ const routes = [
     pathMatch: "full"
   },
   {
-    path: "home",
-    loadChildren: "./home/home.module#HomePageModule"
+    path: "home", 
+    loadChildren: "../home/home.module#HomePageModule"
   },
   {
     path: "list",
-    loadChildren: "./list/list.module#ListPageModule"
+    loadChildren: "../list/list.module#ListPageModule"
   }
 ];
 @NgModule({
