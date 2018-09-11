@@ -1,20 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthGuardService } from './services/authentication.service';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { 
+    path: 'members', 
+    canActivate: [AuthGuardService],
+    loadChildren: './members/member-routing.module#MemberRoutingModule'
   },
-  {
-    path: 'home',
-    loadChildren: './home/home.module#HomePageModule'
-  },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule'
-  }
+  { path: 'login', loadChildren: './public/login/login.module#LoginPageModule' }
 ];
 
 @NgModule({
