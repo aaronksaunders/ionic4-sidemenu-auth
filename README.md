@@ -5,7 +5,7 @@ based on great work done here - https://devdactic.com/ionic-4-login-angular/
 
 ## How It Works
 
-We put an AuthGuard on the module that provides access to all of the member related pages and functionality. The login page has no gaurd so it can be freely accessed.
+We put an `AuthGuard` on the module that provides access to all of the member related pages and functionality. The login page has no gaurd so it can be freely accessed. See more information on [Route Guards in the angular.io documentation](https://angular.io/guide/router#milestone-5-route-guards)
 
 ```javascript
 const routes: Routes = [
@@ -18,6 +18,11 @@ const routes: Routes = [
   { path: 'login', loadChildren: './public/login/login.module#LoginPageModule' }
 ];
 ```
+
+The member routing module is where we control access to the private content. An import note from the documentation is what supports this approach.
+
+>The Routing Module is a design choice whose value is most obvious when the configuration is complex and includes specialized guard and resolver services. It can seem like overkill when the actual configuration is dead simple.
+See more information on [Routing Modules in the Angular.io Documentation](https://angular.io/guide/router#milestone-2-routing-module)
 
 We created the `authentication.service` to track in the user is logged in or out and to manage the two different states.
 
