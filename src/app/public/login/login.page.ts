@@ -14,6 +14,6 @@ export class LoginPage implements OnInit {
 
   login() {
     this.auth.setLoggedIn(true)
-    this.router.navigateByUrl("/members/home");
+    this.router.navigateByUrl("members");
   }
 }
