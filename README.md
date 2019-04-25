@@ -1,6 +1,12 @@
-# ionic4-sidemenu-auth
+# ionic4-sidemenu-auth ( now with Tabs !! )
 
-based on great work done here - https://devdactic.com/ionic-4-login-angular/
+- Code recently updated to latest version of Ionic `"@ionic/angular": "^4.3.0",`
+- Made it a bit more complex with 
+  - Authentication
+  - Side Menu
+  - Tabs
+  - Tab Detail Page
+- based on great work done here - https://devdactic.com/ionic-4-login-angular/
 
 
 ## How It Works
