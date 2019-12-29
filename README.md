@@ -2,6 +2,30 @@
 Building a Basic Ionic 4 Login Flow with Angular Router &amp; Side Menu UI
 ( now with Tabs !! )
 
+### Updated to latest Ionic Versions
+```
+Ionic:
+
+   Ionic CLI                     : 5.4.13 (/Users/aaronksaunders/.nvm/versions/node/v10.15.1/lib/node_modules/ionic)
+   Ionic Framework               : @ionic/angular 4.11.7
+   @angular-devkit/build-angular : 0.803.21
+   @angular-devkit/schematics    : 8.1.3
+   @angular/cli                  : 8.1.3
+   @ionic/angular-toolkit        : 2.1.1
+
+Utility:
+
+   cordova-res                          : not installed
+   native-run (update available: 0.3.0) : 0.2.9
+
+System:
+
+   NodeJS : v10.15.1 (/Users/aaronksaunders/.nvm/versions/node/v10.15.1/bin/node)
+   npm    : 6.11.2
+   OS     : macOS Catalina
+```
+
+
 - Code recently updated to latest version of Ionic `"@ionic/angular": "^4.3.0",`
 - Made it a bit more complex with 
   - Authentication
